@@ -1,11 +1,16 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v2.json",
-  "manifest_version": "2.0",
+  "$schema": "https://raw.githubusercontent.com/Containerpak/cpak/v2/schema/manifest-v3.json",
+  "manifest_version": "3.0",
   "name": "Lua SDK",
   "description": "Lua interpreter, compiler and development headers.",
   "version": "5.4.8",
-  "image": "ghcr.io/containerpak/sdk-lua:main",
-  "binaries": ["/usr/bin/lua", "/usr/bin/luac", "/usr/bin/lua5.4", "/usr/bin/luac5.4"],
+  "image": "ghcr.io/containerpak/sdk-lua@sha256:590dc6b91e0bcd1eec00ff4cc087c10340ad610a3e2d59a6862fd17b509bb086",
+  "binaries": [
+    "/usr/bin/lua",
+    "/usr/bin/luac",
+    "/usr/bin/lua5.4",
+    "/usr/bin/luac5.4"
+  ],
   "desktop_entries": [],
   "dependencies": [],
   "addons": [],
@@ -14,21 +19,18 @@
     "slot": "sdk.lua",
     "mode": "exclusive",
     "exports": {
-      "path": ["/usr/bin"]
+      "path": [
+        "/usr/bin"
+      ]
     }
   },
   "idle_time": 0,
   "override": {
-    "socketX11": false,
     "socketWayland": false,
     "socketPulseAudio": false,
-    "socketSessionBus": false,
-    "socketSystemBus": false,
     "socketSshAgent": true,
     "socketCups": false,
     "socketGpgAgent": true,
-    "socketAtSpiBus": false,
-    "socketBluetooth": false,
     "deviceDri": false,
     "deviceKvm": false,
     "deviceShm": false,
@@ -40,7 +42,12 @@
     "deviceAll": false,
     "notification": false,
     "openURI": false,
-    "filesystem": [{"path": "home", "access": "read-write"}],
+    "filesystem": [
+      {
+        "path": "home",
+        "access": "read-write"
+      }
+    ],
     "env": [],
     "network": true,
     "process": false,
@@ -48,7 +55,6 @@
     "memoryMaxMB": 0,
     "cpuQuota": 0,
     "pidsMax": 0,
-    "asRoot": false,
-    "allowedHostCommands": []
+    "asRoot": false
   }
 }
