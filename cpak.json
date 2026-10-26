@@ -4,7 +4,7 @@
   "name": "Lua SDK",
   "description": "Lua interpreter, compiler and development headers.",
   "version": "5.4.8",
-  "image": "ghcr.io/containerpak/sdk-lua@sha256:9154b458070e09206633de9ce2e2a872792c3fbaecc62634186d32b2bebc2bae",
+  "image": "ghcr.io/containerpak/sdk-lua@sha256:8a9ed54fab405c6bcfd5c3a6c03cfcceb087cff0194b80b110b7db9555b8080d",
   "binaries": [
     "/usr/bin/lua",
     "/usr/bin/luac",
